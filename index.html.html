@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial;
+            margin:0;
+        }
+        header{
+            display:flex;
+            justify-content:space-between;
+            padding:20px;
+            background:white;
+        }
+        .hero{
+            position:relative;
+        }
+        .hero img{
+            width:100%;
+        }
+        .card{
+            position:absolute;
+            bottom:20px;
+            left:50%;
+            transform:translateX(-50%);
+            background:#f0ede6;
+            padding:20px;
+        }
+        .flex{
+            display:flex;
+            gap:10px;
+            padding:20px;
+        }
+        .box{
+            flex:1;
+            background:#ccc;
+            padding:20px;
+            text-align:center;
+        }
+        @media(max-width:600px){
+            .flex{
+                flex-direction:column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Amber Smith</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </div>
+</header>
+
+<div class="hero">
+    <img src="https://source.unsplash.com/1200x400/?plants">
+    <div class="card">
+        <h3>Welcome</h3>
+        <p>My blog page</p>
+    </div>
+</div>
+
+<div class="flex">
+    <div class="box">Travel</div>
+    <div class="box">Lifestyle</div>
+    <div class="box">Home</div>
+</div>
+
+</body>
+</html>
